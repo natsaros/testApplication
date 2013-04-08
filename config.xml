@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+#
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+#
+-->
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "atsaros.testapp"
+        versionCode="10"
+        version   = "1.0.0">
+
+    <name>Testing</name>
+
+    <description>
+        A Test Application
+    </description>
+
+    <author email="natsaros@hotmail.com">
+        Nikos Atsaros
+    </author>
+
+
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="TopActivityIndicator" value="gray" />
+    <preference name="EnableLocation" value="true" />
+    <preference name="EnableViewportScale" value="tru" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value=".25" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="fullscreen" value="true" />
+    <preference name="android-minSdkVersion" value="10" />
+    <preference name="splash-screen-duration" value="5000" />
+
+    <preference name="phonegap-version" value="2.0.0" />
+
+    <content src="index.html" />
+
+    <plugin name="Accelerometer" value="org.apache.cordova.AccelListener" />
+    <plugin name="Accelerometer" value="CDVAccelerometer" />
+    <plugin name="Contacts" value="CDVContacts" />
+    <plugin name="Contacts" value="org.apache.cordova.ContactManager" />
+    <plugin name="Geolocation" value="CDVLocation" />
+    <plugin name="Geolocation" value="org.apache.cordova.GeoBroker" />
+
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+
+    <!--
+
+        <plugins>
+            <plugin name="Device" value="CDVDevice" />
+            <plugin name="Logger" value="CDVLogger" />
+            <plugin name="Compass" value="CDVLocation" />
+            <plugin name="Accelerometer" value="CDVAccelerometer" />
+            <plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
+            <plugin name="Camera" value="CDVCamera" />
+            <plugin name="NetworkStatus" value="CDVConnection" />
+            <plugin name="Contacts" value="CDVContacts" />
+            <plugin name="Contacts" value="org.apache.cordova.ContactManager" />
+            <plugin name="Debug Console" value="CDVDebugConsole" />
+            <plugin name="Echo" value="CDVEcho" />
+            <plugin name="File" value="CDVFile" />
+            <plugin name="FileTransfer" value="CDVFileTransfer" />
+            <plugin name="Geolocation" value="CDVLocation" />
+            <plugin name="Notification" value="CDVNotification" />
+            <plugin name="Media" value="CDVSound" />
+            <plugin name="Capture" value="CDVCapture" />
+            <plugin name="SplashScreen" value="CDVSplashScreen" />
+            <plugin name="SplashScreen" value="org.apache.cordova.SplashScreen"/>
+            <plugin name="Battery" value="CDVBattery" />
+            <plugin name="Globalization" value="CDVGlobalization" />
+            <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+        </plugins>
+
+        <preference name="phonegap-version" value="2.0.0" />
+
+        <feature name="http://api.phonegap.com/1.0/contacts"/>
+        <feature name="http://api.phonegap.com/1.0/file"/>
+        <preference name="android-minSdkVersion" value="10" />
+        <preference name="splash-screen-duration" value="5000" />
+        &lt;!&ndash;<gap:splash src="assets/splash/ios/splash_at_2x.png" width="640" height="960" />&ndash;&gt;
+        <icon src="icon.png" width="256" height="256"/>
+        <gap:splash src="images/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+        <gap:splash src="images/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+        <gap:splash src="images/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+        <gap:splash src="images/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+        <gap:splash src="images/Default_at_2x.png" width="640" height="960" />
+
+    -->
+    <access origin="*" />
+</widget>

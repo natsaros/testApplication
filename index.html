@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.0.css" type="text/css"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.0theme.css" type="text/css"/>
+    <link rel="stylesheet" href="css/application.css" type="text/css">
+
+
+    <script src="lib/jquery-1.9.1.min.js"></script>
+    <script src="js/customScripting.js"></script>
+    <script src="lib/jquery.mobile.custom.min.js"></script>
+    <title>Test App</title>
+</head>
+<body>
+<div data-role="page" data-theme="b" id="mainPage" >
+    <div data-role="header" data-id="mainHeader" data-theme="b" data-position="fixed">
+        <h1>Test Page Main</h1>
+        <a class="ui-btn ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-up-c ui-btn-right" href="#menuPopup" id="menuPopupLink" data-transition="slidedown" data-role="button" data-rel="popup" data-theme="b" data-mini="true" data-inline="true" data-iconshadow="true" data-corners="true" data-shadow="true" data-wrappelers="span">
+                         <span class="ui-btn-corner-all ui-btn-inner">
+                             <span class="ui-btn-text">Menu</span>
+                         </span>
+        </a>
+        <div data-role="popup" data-theme="a" id="menuPopup" data-overlay-theme="a">
+            <h1>Menu</h1>
+            <a class="ui-btn ui-btn-corner-all ui-btn-up-b" data-theme="b" data-transition="slidedown" data-rel="dialog" data-role="button" href="#popup" data-corners="true" data-shadow="true" data-iconshadow="true"
+               data-wrappelers="span">
+                     <span class="ui-btn-inner ui-btn-corner-all">
+                     <span class="ui-btn-text">Email</span>
+                     </span>
+            </a>
+            <a class="ui-btn ui-btn-corner-all ui-btn-up-b" data-theme="b" data-transition="slidedown" data-rel="dialog" data-role="button" href="#popup" data-corners="true" data-shadow="true" data-iconshadow="true"
+               data-wrappelers="span">
+                     <span class="ui-btn-inner ui-btn-corner-all">
+                     <span class="ui-btn-text">Photos</span>
+                     </span>
+            </a>
+            <a class="ui-btn ui-btn-corner-all ui-btn-up-b" data-theme="b" data-transition="slidedown" data-rel="dialog" data-role="button" href="#popup" data-corners="true" data-shadow="true" data-iconshadow="true"
+               data-wrappelers="span">
+                     <span class="ui-btn-inner ui-btn-corner-all">
+                     <span class="ui-btn-text">Tweet Photo</span>
+                     </span>
+            </a>
+            <a class="ui-btn ui-btn-corner-all ui-btn-up-a" data-theme="a" data-transition="slidedown" data-rel="dialog" data-role="button" href="#mainPage" data-corners="true" data-shadow="true" data-iconshadow="true"
+               data-wrappelers="span">
+                     <span class="ui-btn-inner ui-btn-corner-all">
+                     <span class="ui-btn-text">Cancel</span>
+                     </span>
+            </a>
+            <a class="ui-btn ui-btn-corner-all ui-btn-up-a" data-theme="a" id="exitBtn" onclick="exitApplicaton()" data-transition="slidedown" data-rel="dialog" data-role="button" href="" data-corners="true" data-shadow="true" data-iconshadow="true"
+               data-wrappelers="span">
+                                <span class="ui-btn-inner ui-btn-corner-all">
+                                <span class="ui-btn-text">Exit</span>
+                                </span>
+            </a>
+        </div>
+    </div>
+    <div data-role="content">
+        <ul id="contactInfo" data-role="listview" data-filter="true" data-autodividers="true" data-theme="d">
+        </ul>
+        <!--        <a href="html/page3.html" id="page3Link" data-role="button" data-mini="true" data-inline="true">Wrong Page</a>
+        <a class="ui-btn ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-up-c" href="#popup" id="popupLink" data-transition="pop" data-role="button" data-theme="c"  data-iconshadow="true" data-corners="true" data-shadow="true" data-wrappelers="span">
+                    <span class="ui-btn-corner-all ui-btn-inner">
+                        <span class="ui-btn-text">Pop Up</span>
+                    </span>
+        </a>-->
+    </div>
+
+    <div data-role="footer" data-theme="b" data-id="mainFooter" data-position="fixed">
+        <a href="html/page1.html" id="page1Link" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-l" data-theme="d">Previous</a>
+        <a href="html/page2.html" id="page2Link" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-r" data-theme="d">Next</a>
+    </div>
+</div>
+<!--<div data-role="page" data-theme="a" id="page1">
+    <div data-role="header">
+        <h1>Test Page 1</h1>
+    </div>
+    <div data-role="content" data-title="Page 1" data-theme="d">
+        <p>Page 1</p>
+        <a href="#mainPage">Back to main</a>
+        <a href="tel:6945194718">Call me!</a>
+    </div>
+    <div data-role="footer">
+        <h4>Page1 footer</h4>
+    </div>
+</div>
+<div data-role="page" data-theme="d" id="page2">
+    <div data-role="header">
+        <h1>Test Page 2</h1>
+    </div>
+    <div data-role="content" data-title="Page 2">
+        <p>Page 2</p>
+        <a href="#mainPage">Back to main</a>
+        <a data-rel="back">Back to main</a>
+    </div>
+    <div data-role="footer">
+        <h4>Page2 footer</h4>
+    </div>
+</div>-->
+<div data-role="dialog" data-theme="d" id="popup" data-overlay-theme="e">
+    <div data-role="header" data-theme="e">
+        <h1>Dialog</h1>
+    </div>
+    <div data-role="content" data-title="Pop Up Window" >
+        <p>I am poping up!</p>
+        <a href="#mainPage" data-transition="slideup">Back to main</a>
+        <a class="ui-btn ui-btn-corner-all ui-btn-up-c" href="#" data-rel="back">
+            <span class="ui-btn-inner ui-btn-corner-all">
+                    <span class="ui-btn-text">Back</span>
+            </span>
+        </a>
+    </div>
+</div>
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default">
+    <span class="ui-icon ui-icon-loading"></span>
+    <h1>Loading...</h1>
+</div>
+<script src="js/application.js"></script>
+<script src="lib/cordova-2.5.0.js"></script>
+<script src="lib/fastclick.js"></script>
+<script src="lib/pageslider.js"></script>
+
+</body>
+</html>
