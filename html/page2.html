@@ -9,53 +9,68 @@
     <script src="../js/customScripting.js"></script>
     <script src="../lib/jquery.mobile.custom.min.js"></script>
 
+
     <title>Page 2</title>
 </head>
 <body>
 <div data-role="page" data-theme="d">
+
     <div data-role="header" data-id="mainHeader" data-position="fixed">
-        <h1>Test Page 2</h1>
-        <a class="ui-btn ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-up-c ui-btn-right" href="#menuPopup" id="menuPopupLink" data-transition="slidedown" data-role="button" data-rel="popup" data-theme="b" data-mini="true" data-inline="true" data-iconshadow="true" data-corners="true" data-shadow="true" data-wrappelers="span">
-                         <span class="ui-btn-corner-all ui-btn-inner">
-                             <span class="ui-btn-text">Menu</span>
-                         </span>
-        </a>
-        <div data-role="popup" data-theme="a" id="menuPopup" data-overlay-theme="a">
-            <h1>Menu</h1>
-            <a class="ui-btn ui-btn-corner-all ui-btn-up-b" data-theme="b" data-transition="slidedown" data-rel="dialog" data-role="button" href="#popup" data-corners="true" data-shadow="true" data-iconshadow="true"
-               data-wrappelers="span">
-                     <span class="ui-btn-inner ui-btn-corner-all">
-                     <span class="ui-btn-text">Email</span>
-                     </span>
-            </a>
-            <a class="ui-btn ui-btn-corner-all ui-btn-up-b" data-theme="b" data-transition="slidedown" data-rel="dialog" data-role="button" href="#popup" data-corners="true" data-shadow="true" data-iconshadow="true"
-               data-wrappelers="span">
-                     <span class="ui-btn-inner ui-btn-corner-all">
-                     <span class="ui-btn-text">Photos</span>
-                     </span>
-            </a>
-            <a class="ui-btn ui-btn-corner-all ui-btn-up-b" data-theme="b" data-transition="slidedown" data-rel="dialog" data-role="button" href="#popup" data-corners="true" data-shadow="true" data-iconshadow="true"
-               data-wrappelers="span">
-                     <span class="ui-btn-inner ui-btn-corner-all">
-                     <span class="ui-btn-text">Tweet Photo</span>
-                     </span>
-            </a>
-            <a class="ui-btn ui-btn-corner-all ui-btn-up-a" data-theme="a" data-transition="slidedown" data-rel="dialog" data-role="button" href="#mainPage" data-corners="true" data-shadow="true" data-iconshadow="true"
-               data-wrappelers="span">
-                     <span class="ui-btn-inner ui-btn-corner-all">
-                     <span class="ui-btn-text">Cancel</span>
-                     </span>
-            </a>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#myPanel">Panel</a></li>
+                <li><a href="#" class="ui-btn-active ui-state-persist">Test Page Main</a></li>
+                <li><a href="#menuPopup" id="menuPopupLink" data-rel="popup" data-transition="slidedown" >Menu</a></li>
+            </ul>
         </div>
     </div>
+    <div data-role="popup" data-theme="a" id="menuPopup" data-overlay-theme="a">
+        <h4>Menu</h4>
+        <a class="ui-btn ui-btn-corner-all ui-btn-up-b" data-theme="b" data-transition="slidedown" data-rel="dialog" data-role="button" href="#popup" data-corners="true" data-shadow="true" data-iconshadow="true"
+           data-wrappelers="span">
+                      <span class="ui-btn-inner ui-btn-corner-all">
+                      <span class="ui-btn-text">Email</span>
+                      </span>
+        </a>
+        <a class="ui-btn ui-btn-corner-all ui-btn-up-b" data-theme="b" data-transition="slidedown" data-rel="dialog" data-role="button" href="#popup" data-corners="true" data-shadow="true" data-iconshadow="true"
+           data-wrappelers="span">
+                      <span class="ui-btn-inner ui-btn-corner-all">
+                      <span class="ui-btn-text">Photos</span>
+                      </span>
+        </a>
+        <a class="ui-btn ui-btn-corner-all ui-btn-up-b" data-theme="b" data-transition="slidedown" data-rel="dialog" data-role="button" href="#popup" data-corners="true" data-shadow="true" data-iconshadow="true"
+           data-wrappelers="span">
+                      <span class="ui-btn-inner ui-btn-corner-all">
+                      <span class="ui-btn-text">Tweet Photo</span>
+                      </span>
+        </a>
+        <a class="ui-btn ui-btn-corner-all ui-btn-up-a" data-theme="a" data-transition="slidedown" data-rel="dialog" data-role="button" href="#mainPage" data-corners="true" data-shadow="true" data-iconshadow="true"
+           data-wrappelers="span">
+                      <span class="ui-btn-inner ui-btn-corner-all">
+                      <span class="ui-btn-text">Cancel</span>
+                      </span>
+        </a>
+        <a class="ui-btn ui-btn-corner-all ui-btn-up-a" data-theme="a" id="exitBtn" onclick="exitApplicaton()" data-transition="slidedown" data-rel="dialog" data-role="button" href="" data-corners="true" data-shadow="true" data-iconshadow="true"
+           data-wrappelers="span">
+                                 <span class="ui-btn-inner ui-btn-corner-all">
+                                 <span class="ui-btn-text">Exit</span>
+                                 </span>
+        </a>
+    </div>
+    <div id="myPanel" data-role="panel" data-position="left" data-display="push">Hi!</div>
     <div data-role="content" data-title="Page 2" id="page2">
         <p>Page 2</p>
         <a href="../index.html">Back to main</a>
         <a data-rel="back">Back to main</a>
     </div>
     <div data-role="footer" data-id="mainFooter" data-position="fixed">
-        <a href="../index.html" id="page1Link" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-l" data-theme="d">Previous</a>
-        <a href="html/page.html"  id="page2Link" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-r" data-theme="d">Next</a>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="../html/page1.html" id="page1Link" data-icon="arrow-l">Page 1</a></li>
+                <li><a href="../index.html" id="mainPageLink" data-icon="grid">Main Page</a></li>
+                <li><a href="../html/page2.html" id="page2Link" data-icon="arrow-r"  class="ui-btn-active ui-state-persist">Page 2</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 <script src="../js/application.js"></script>

@@ -13,13 +13,8 @@
     height:5%;
 }
 #page3Link,
-#popupLink,
-#menuPopupLink{
+#popupLink{
     float: left;
-}
-
-#page2Link{
-    float:right;
 }
 #contactInfo{
     float: left;
